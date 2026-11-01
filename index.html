@@ -25,7 +25,7 @@
   <p id="sub">Redirecting you to WhatsApp...</p><a class="btn hidden" id="manual" href="#">Open WhatsApp</a>
 </div>
 <script>
-  var SLUG="luneste", REST="https://zmdbafqjtqlenleocukz.supabase.co/rest/v1", KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InptZGJhZnFqdHFsZW5sZW9jdWt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc0NzA0NDMsImV4cCI6MjA5MzA0NjQ0M30.bVUMLSwi37WlltqdZYVIkpIJUHgXnECYvSaj3C4iQtE";
+  var SLUG="luneste", REST="https://wa.humanaizer.io/rest/v1", KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InptZGJhZnFqdHFsZW5sZW9jdWt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc0NzA0NDMsImV4cCI6MjA5MzA0NjQ0M30.bVUMLSwi37WlltqdZYVIkpIJUHgXnECYvSaj3C4iQtE";
   var FB_AGENTS=[{"phone":"905016717793","weight":1}], FB_MSG="Hello, could I get some information about plastic surgery? Ref.: Meta AD", FB_MODE="round-robin", NOAGENT="No agent configured yet.";
   function pickWeighted(l){var t=0,i;for(i=0;i<l.length;i++)t+=(l[i].weight||1);var r=Math.random()*t;for(i=0;i<l.length;i++){r-=(l[i].weight||1);if(r<=0)return l[i];}return l[l.length-1];}
   function localPick(a,m){return m==="weighted"?pickWeighted(a):a[Math.floor(Math.random()*a.length)];}
